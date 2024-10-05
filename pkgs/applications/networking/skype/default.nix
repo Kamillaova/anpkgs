@@ -3,7 +3,7 @@ args.stdenv.mkDerivation {
   name = "skype-1.4";
 
   src = args.fetchurl {
-    url = http://www.skype.com/go/getskype-linux-static;
+    url = https://www.skype.com/go/getskype-linux-static;
     sha256 = "0k71byzaipmw8lb92aad4qyh9rk0fnn3za74v1h268h09gkkd8mz";
     name = "skype_static-1.4.0.99.tar.bz2";
   };
@@ -38,7 +38,7 @@ done
 
   meta = {
       description = "A P2P-VoiceIP client";
-      homepage = http://www.skype.com;
+      homepage = https://www.skype.com;
       license = "skype-eula";
   };
 }

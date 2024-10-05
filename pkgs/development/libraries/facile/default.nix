@@ -12,7 +12,7 @@ stdenv.mkDerivation rec {
 	buildInputs = [ocaml];
 
 	meta = {
-		homepage = http://www.recherche.enac.fr/log/facile;
+		homepage = https://www.recherche.enac.fr/log/facile;
 		license = "LGPL";
 		description = "A Functional Constraint Library";
 	};

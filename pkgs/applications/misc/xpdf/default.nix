@@ -11,7 +11,7 @@ stdenv.mkDerivation {
   name = "xpdf-3.02pl1";
 
   src = fetchurl {
-    url = ftp://ftp.foolabs.com/pub/xpdf/xpdf-3.02.tar.gz;
+    url = https://ftp.foolabs.com/pub/xpdf/xpdf-3.02.tar.gz;
     sha256 = "000zq4ddbwyxiki4vdwpmxbnw5n9hsg9hvwra2p33hslyib7sfmk";
   };
   
@@ -21,7 +21,7 @@ stdenv.mkDerivation {
 
   patches = [
     (fetchurl {
-      url = ftp://ftp.foolabs.com/pub/xpdf/xpdf-3.02pl1.patch;
+      url = https://ftp.foolabs.com/pub/xpdf/xpdf-3.02pl1.patch;
       sha256 = "1wxv9l0d2kkwi961ihpdwi75whdvk7cgqxkbfym8cjj11fq17xjq";
     })
     ./xpdf-3.02-protection.patch

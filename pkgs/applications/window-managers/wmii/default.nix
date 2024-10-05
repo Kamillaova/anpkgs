@@ -2,7 +2,7 @@ args: with args; stdenv.mkDerivation {
   name = "wmii-20070516";
 
   src = fetchurl {
-    url = http://www.suckless.org/snaps/wmii-snap20070304.tgz;
+    url = https://www.suckless.org/snaps/wmii-snap20070304.tgz;
     sha256 = "01ba1qk48n6wgpnavdwakgwmv895jvqvi75sm2wsvd6bqmc2xp86";
   };
 

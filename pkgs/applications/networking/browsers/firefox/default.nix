@@ -4,7 +4,7 @@
 , # If you want the resulting program to call itself "Firefox" instead
   # of "Deer Park", enable this option.  However, those binaries may
   # not be distributed without permission from the Mozilla Foundation,
-  # see http://www.mozilla.org/foundation/trademarks/.
+  # see https://www.mozilla.org/foundation/trademarks/.
   enableOfficialBranding ? false
     
 }:
@@ -14,7 +14,7 @@ stdenv.mkDerivation {
 
   builder = ./builder.sh;
   src = fetchurl {
-    url = http://releases.mozilla.org/pub/mozilla.org/firefox/releases/2.0.0.11/source/firefox-2.0.0.11-source.tar.bz2;
+    url = https://releases.mozilla.org/pub/mozilla.org/firefox/releases/2.0.0.11/source/firefox-2.0.0.11-source.tar.bz2;
     sha1 = "6d070bf04f1a037b621237d02ef9be7802a51bf1";
   };
 
@@ -26,7 +26,7 @@ stdenv.mkDerivation {
     ./writable-copies.patch
     # Ugh, inexplicable problem since GTK+ 2.10.  Probably a Firefox
     # bug, but I don't know.  See
-    # http://lists.gobolinux.org/pipermail/gobolinux-users/2007-January/004344.html
+    # https://lists.gobolinux.org/pipermail/gobolinux-users/2007-January/004344.html
     ./xlibs.patch
   ];
 
@@ -49,7 +49,7 @@ stdenv.mkDerivation {
 
   meta = {
     description = "Mozilla Firefox - the browser, reloaded";
-    homepage = http://www.mozilla.com/en-US/firefox/;
+    homepage = https://www.mozilla.com/en-US/firefox/;
   };
 
   passthru = {inherit gtk;};

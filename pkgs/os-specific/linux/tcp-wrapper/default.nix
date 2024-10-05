@@ -3,7 +3,7 @@ args.stdenv.mkDerivation {
   name = "tcp-wrappers-7.6";
 
   src = args.fetchurl {
-    url = http://ftp.debian.org/debian/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.dbs.orig.tar.gz;
+    url = https://ftp.debian.org/debian/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.dbs.orig.tar.gz;
     sha256 = "0k68ziinx6biwar5lcb9jvv0rp6b3vmj6861n75bvrz4w1piwkdp";
   };
   

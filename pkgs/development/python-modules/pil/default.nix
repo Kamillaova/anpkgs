@@ -3,7 +3,7 @@ args.stdenv.mkDerivation {
   name = "python-imaging-1.1.6";
 
   src = args.fetchurl {
-    url = http://effbot.org/downloads/Imaging-1.1.6.tar.gz;
+    url = https://effbot.org/downloads/Imaging-1.1.6.tar.gz;
     sha256 = "141zidl3s9v4vfi3nsbg42iq1lc2a932gprqr1kij5hrnn53bmvx";
   };
 

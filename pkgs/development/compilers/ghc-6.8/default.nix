@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation (rec {
   name = "ghc-6.8.2";
-  homepage = "http://www.haskell.org/ghc";
+  homepage = "https://www.haskell.org/ghc";
 
   src = map fetchurl [
     { url = "${homepage}/dist/stable/dist/${name}-src.tar.bz2";

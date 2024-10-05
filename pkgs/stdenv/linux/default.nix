@@ -32,13 +32,9 @@ rec {
   };
 
   # This function downloads a file.
-  download = {url, sha1, pkgname}: derivation {
+  download = {url, sha1, ...}: import <nix/fetchurl.nix> {
     name = baseNameOf (toString url);
-    builder = bootstrapTools.bash;
-    inherit system curl url;
-    args = [ ./scripts/download.sh ];
-    outputHashAlgo = "sha1";
-    outputHash = sha1;
+    inherit url sha1;
   };
 
   # This function downloads and unpacks a file.

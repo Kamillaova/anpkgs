@@ -4,7 +4,7 @@ pkgs.stdenv.mkDerivation {
   name = "iproute-20070313";
 
   src = pkgs.fetchurl {
-    url = http://ftp.debian.org/debian/pool/main/i/iproute/iproute_20070313.orig.tar.gz;
+    url = https://ftp.debian.org/debian/pool/main/i/iproute/iproute_20070313.orig.tar.gz;
     sha256 = "1j7cmlr7p9xcg9ys8fhjnynwrp475rbkr2j2c5jqm1xzczw60f9v";
   };
 

@@ -3,13 +3,13 @@
 stdenv.mkDerivation {
   name = "splashutils-1.3";
   src = fetchurl {
-    url = http://dev.gentoo.org/~spock/projects/splashutils/archive/splashutils-1.3.tar.bz2;
+    url = https://dev.gentoo.org/~spock/projects/splashutils/archive/splashutils-1.3.tar.bz2;
     md5 = "c7c92b98e34b860511aa57bd29d62f76";
   };
   patches = [
     ./purity.patch
     ./no-fbsplash.patch
-    # Borrowed from http://sources.gentoo.org/viewcvs.py/*checkout*/gentoo-x86/media-gfx/splashutils/files/splashutils-1.3-fdset.patch?rev=1.1.
+    # Borrowed from https://sources.gentoo.org/viewcvs.py/*checkout*/gentoo-x86/media-gfx/splashutils/files/splashutils-1.3-fdset.patch?rev=1.1.
     ./fdset.patch
   ];
 

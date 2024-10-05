@@ -13,7 +13,7 @@ Thank you,
 TeamSpeak Sales Team
 ________________________________
 e-Mail: sales@tritoncia.com
-TeamSpeak: http://www.TeamSpeak.com
+TeamSpeak: https://www.TeamSpeak.com
 Account Login: https://sales.TritonCIA.com/users
 
 
@@ -26,7 +26,7 @@ Subject: teamspeak on nix?
 
 Hello,
 
-nix is very young software distribution system (http://nix.cs.uu.nl/)
+nix is very young software distribution system (https://tarballs.nixos.org/)
 I'd like to ask wether you permit us to add teamspeak (server/ client?)
 
 Sincerly
@@ -38,7 +38,7 @@ args.stdenv.mkDerivation {
   name = "teamspeak-client-rc2-2032";
 
   src = args.fetchurl {
-    url = ftp://213.202.254.114/teamspeak/releases/ts2_client_rc2_2032.tar.bz2;
+    url = https://213.202.254.114/teamspeak/releases/ts2_client_rc2_2032.tar.bz2;
     md5 = "e93d17a25e07b1cbe400e4eb028ca8f8";
   };
 
@@ -65,7 +65,7 @@ args.stdenv.mkDerivation {
 
   meta = { 
       description = "The TeamSpeak voice communication tool";
-      homepage = http://www.goteamspeak.com;
+      homepage = https://www.goteamspeak.com;
       license = "TODO"; # non commercial use see email above 
   };
 }

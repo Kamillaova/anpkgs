@@ -25,7 +25,7 @@ stdenv.mkDerivation {
   name = "MPlayer-1.0rc2";
 
   src = fetchurl {
-    url = http://www1.mplayerhq.hu/MPlayer/releases/MPlayer-1.0rc2.tar.bz2;
+    url = https://www1.mplayerhq.hu/MPlayer/releases/MPlayer-1.0rc2.tar.bz2;
     sha1 = "e9b496f3527c552004ec6d01d6b43f196b43ce2d";
   };
 
@@ -59,7 +59,7 @@ stdenv.mkDerivation {
   patches = [
     # These fix MPlayer's aspect ratio when run in a screen rotated with
     # Xrandr.
-    # See: http://itdp.de/~itdp/html/mplayer-dev-eng/2005-08/msg00427.html
+    # See: https://itdp.de/~itdp/html/mplayer-dev-eng/2005-08/msg00427.html
     #./mplayer-aspect.patch
     #./mplayer-pivot.patch
   ];

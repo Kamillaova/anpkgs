@@ -37,7 +37,7 @@ stdenv.mkDerivation {
   builder = ./builder.sh;
   
   src = fetchurl {
-    url = "http://www.kernel.org/pub/linux/kernel/v2.6/linux-2.6.21.tar.bz2";
+    url = "https://www.kernel.org/pub/linux/kernel/v2.6/linux-2.6.21.tar.bz2";
     sha256 = "f187b12d70e0a48ce81f0472dfe9504fb5f0f966be339ac9d57dd2b991a74942";
   };
   

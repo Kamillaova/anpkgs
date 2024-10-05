@@ -13,13 +13,13 @@ args: with args; stdenv.mkDerivation {
   inherit pciutils;
 
   src = fetchurl {
-    url = http://www16.plala.or.jp/mano-a-mano/i810switch/i810switch-0.6.5.tar.gz;
+    url = https://www16.plala.or.jp/mano-a-mano/i810switch/i810switch-0.6.5.tar.gz;
     sha256 = "d714840e3b14e1fa9c432c4be0044b7c008d904dece0d611554655b979cad4c3";
   };
 
   meta = {
     description = "i810switch is a utility for switching the LCD and external VGA display.";
-    homepage = "http://www16.plala.or.jp/mano-a-mano/i810switch.html";
+    homepage = "https://www16.plala.or.jp/mano-a-mano/i810switch.html";
     license = "GPL2";
   };
 }

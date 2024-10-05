@@ -14,14 +14,14 @@ stdenv.mkDerivation rec {
     #if (stdenv.system == "i686-linux") then
       #fetchurl {
         # stable 2.3.0 is failing - got the tip on the mailinglist to have look
-        # at http://www.openoffice.org/issues/show_bug.cgi?id=74751
+        # at https://www.openoffice.org/issues/show_bug.cgi?id=74751
         # now I'm trying snapshot because it should already have this patch
-        #url = http://ftp.ussg.iu.edu/openoffice/contrib/rc/2.3.1rc1/OOo_2.3.1rc1_src_core.tar.bz2;
+        #url = https://ftp.ussg.iu.edu/openoffice/contrib/rc/2.3.1rc1/OOo_2.3.1rc1_src_core.tar.bz2;
         #name = "OOo_2.3.1_src_core.tar.bz2";
         #sha256 = "";
     #} else 
     fetchurl {
-        url = http://openoffice.bouncer.osuosl.org/?product=OpenOffice.org&os=src_bzip&lang=core&version=2.3.0;
+        url = https://openoffice.bouncer.osuosl.org/?product=OpenOffice.org&os=src_bzip&lang=core&version=2.3.0;
         name = "OOo_2.3.0_src_core.tar.bz2";
         sha256 = "0mkxn9qj3f03rjkmxc4937gr2w429hnxzb9j5j2grdknfga5a1c3";
     };
@@ -73,7 +73,7 @@ stdenv.mkDerivation rec {
 
   inherit icu fontconfig libjpeg jdk cups;
 
-  # libawt_problem see http://www.openoffice.org/issues/show_bug.cgi?id=74751 
+  # libawt_problem see https://www.openoffice.org/issues/show_bug.cgi?id=74751 
   # Can be removed in newer releases than 2.3.0
   patch_file = ./libawt_problem;
   patches = [./ooo-libtextcat.patch ];
@@ -84,7 +84,7 @@ stdenv.mkDerivation rec {
 
   meta = {
     description = "OpenOffice.org is a multiplatform and multilingual office suite";
-    homepage = http://www.openoffice.org/;
+    homepage = https://www.openoffice.org/;
     license = "LGPL";
   };
 }

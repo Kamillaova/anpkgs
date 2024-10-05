@@ -4,7 +4,7 @@ stdenv.mkDerivation {
   name = "nss_ldap-254";
    
   src = fetchurl {
-    url = http://www.padl.com/download/nss_ldap-254.tar.gz;
+    url = https://www.padl.com/download/nss_ldap-254.tar.gz;
     md5 = "00475b790d3aff3ccd40a1ab4520965e";
   };
 

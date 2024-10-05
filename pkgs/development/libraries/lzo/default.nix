@@ -9,6 +9,6 @@ stdenv.mkDerivation rec {
 	meta = {
 		description = "LZO is a data compresion library which is suitable for
 		data de-/compression in real-time";
-		homepage = http://www.oberhumer.com/opensource/lzo;
+		homepage = https://www.oberhumer.com/opensource/lzo;
 	};
 }

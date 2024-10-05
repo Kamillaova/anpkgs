@@ -4,7 +4,7 @@ stdenv.mkDerivation {
   name = "sudo-1.6.9p4";
 
   src = fetchurl {
-    url = ftp://sunsite.ualberta.ca/pub/Mirror/sudo/sudo-1.6.9p4.tar.gz;
+    url = https://sunsite.ualberta.ca/pub/Mirror/sudo/sudo-1.6.9p4.tar.gz;
     sha256 = "0y65f77wxsl285yr1krfh5djcwm95n39p0yb3r1xgg98gir5z7w4";
   };
 

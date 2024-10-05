@@ -11,7 +11,7 @@ args.stdenv.mkDerivation {
 
   meta = { 
       description = "nfs utils";
-      homepage = http://nfs.sourceforge.net/;
+      homepage = https://nfs.sourceforge.net/;
       license = "GPL2";
   };
 }

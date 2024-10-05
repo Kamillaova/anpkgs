@@ -5,7 +5,7 @@ stdenv.mkDerivation {
 
   src = 
 	fetchurl {
-		url = http://tapas.affenbande.org/pidgin-latex/pidgin-latex-0.9.tgz;
+		url = https://tapas.affenbande.org/pidgin-latex/pidgin-latex-0.9.tgz;
 		sha256 = "1yqd3qgxd3n8hm60qg7yv7j1crr6f3d4yrdpgwdpw2pyf92p8nxp";
 	};
 

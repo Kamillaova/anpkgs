@@ -17,11 +17,11 @@ stdenv.mkDerivation {
     md5 = "c056abd763e899114bf745c9eedbf9ad";
   };
 /*    (fetchurl {
-      url = http://nix.cs.uu.nl/dist/tarballs/MesaGLUT-6.4.tar.bz2;
+      url = https://tarballs.nixos.org/MesaGLUT-6.4.tar.bz2;
       md5 = "1a8c4d4fc699233f5fdb902b8753099e";
     })
     (fetchurl {
-      url = http://nix.cs.uu.nl/dist/tarballs/MesaDemos-6.4.tar.bz2;
+      url = https://tarballs.nixos.org/MesaDemos-6.4.tar.bz2;
       md5 = "1a8c4d4fc699233f5fdb902b8753099e";
     }) */
   
@@ -40,6 +40,6 @@ stdenv.mkDerivation {
   
   meta = {
     description = "OpenGL-compatible 3D library. Supports acceleration.";
-    homepage = http://www.mesa3d.org/;
+    homepage = https://www.mesa3d.org/;
   };
 }

@@ -3,7 +3,7 @@ args: with args;
   name = "ImageMagick-6.3.5";
 
   src = fetchurl {
-    url = ftp://ftp.imagemagick.org/pub/ImageMagick/ImageMagick-6.3.5-5.tar.bz2;
+    url = https://ftp.imagemagick.org/pub/ImageMagick/ImageMagick-6.3.5-5.tar.bz2;
     sha256 = "0avq6kllxw552krxgsa72c1b44zwyhwi38dk4a4ij3fqy0svy9zh";
   };
 

@@ -10,7 +10,7 @@ stdenv.mkDerivation {
   builder = ./builder.sh;
   
   src = fetchurl {
-    url = http://download.bittorrent.com/dl/BitTorrent-5.0.7.tar.gz;
+    url = https://download.bittorrent.com/dl/BitTorrent-5.0.7.tar.gz;
     sha256 = "09m2qlhzbc6j1hf6fniri0hh6cy6ccgwi2sph65bpjrc417l94gj";
   };
   

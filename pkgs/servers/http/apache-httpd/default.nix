@@ -11,7 +11,7 @@ stdenv.mkDerivation {
 
   builder = ./builder.sh;
   src = fetchurl {
-    url = http://archive.apache.org/dist/httpd/httpd-2.2.6.tar.bz2;
+    url = https://archive.apache.org/dist/httpd/httpd-2.2.6.tar.bz2;
     md5 = "203bea91715064f0c787f6499d33a377";
   };
 

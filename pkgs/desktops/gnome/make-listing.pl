@@ -4,8 +4,8 @@ use strict;
 
 # Example use:
 # ./make-listing.sh \
-#   http://ftp.gnome.org/pub/GNOME/platform/2.10/2.10.1/sources/ \
-#   http://ftp.gnome.org/pub/GNOME/platform/2.10/2.10.1/sources/MD5SUMS-for-bz2
+#   https://ftp.gnome.org/pub/GNOME/platform/2.10/2.10.1/sources/ \
+#   https://ftp.gnome.org/pub/GNOME/platform/2.10/2.10.1/sources/MD5SUMS-for-bz2
 
 my $baseURL = shift;
 my $md5URL = shift;

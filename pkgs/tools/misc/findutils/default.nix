@@ -3,7 +3,7 @@
 stdenv.mkDerivation {
   name = "findutils-4.2.30";
   src = fetchurl {
-    url = mirror://gnu/findutils/findutils-4.2.30.tar.gz;
+    url = https://ftp.gnu.org/gnu/findutils/findutils-4.2.30.tar.gz;
     sha256 = "1x1s0h1gf4hxh6xi6vq336sz8zsh4hvnsslc7607z41l82xrqjrl";
   };
   buildInputs = [coreutils];

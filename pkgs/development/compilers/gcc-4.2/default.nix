@@ -14,15 +14,15 @@ stdenv.mkDerivation {
   
   src =
     optional /*langC*/ true (fetchurl {
-      url = mirror://gnu/gcc/gcc-4.2.0/gcc-core-4.2.0.tar.bz2;
+      url = https://ftp.gnu.org/gnu/gcc/gcc-4.2.0/gcc-core-4.2.0.tar.bz2;
       sha256 = "0ykhzxhr8857dr97z0j9wyybfz1kjr71xk457cfapfw5fjas4ny1";
     }) ++
     optional /*langCC*/ true (fetchurl {
-      url = mirror://gnu/gcc/gcc-4.2.0/gcc-g++-4.2.0.tar.bz2;
+      url = https://ftp.gnu.org/gnu/gcc/gcc-4.2.0/gcc-g++-4.2.0.tar.bz2;
       sha256 = "0k5ribrfdp9vmljxrglcgx2j2r7xnycd1rvd8sny2y5cj0l8ps12";
     }) ++
     optional langF77 (fetchurl {
-      url = mirror://gnu/gcc/gcc-4.2.0/gcc-fortran-4.2.0.tar.bz2;
+      url = https://ftp.gnu.org/gnu/gcc/gcc-4.2.0/gcc-fortran-4.2.0.tar.bz2;
       sha256 = "0vw07qv6qpa5cgxc0qxraq6li2ibh8zrp65jrg92v4j63ivvi3hh";
     });
     
@@ -52,7 +52,7 @@ stdenv.mkDerivation {
   passthru = { inherit langC langCC langF77; };
 
   meta = {
-    homepage = "http://gcc.gnu.org/";
+    homepage = "https://gcc.gnu.org/";
     license = "GPL/LGPL";
     description = "GNU Compiler Collection, 4.2.x";
   };

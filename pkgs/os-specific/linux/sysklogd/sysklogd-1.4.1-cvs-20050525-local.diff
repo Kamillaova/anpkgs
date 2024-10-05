@@ -404,14 +404,14 @@ diff -ruN sysklogd-1.4.1/README.linux sysklogd-1.4.1.new/README.linux
  in the message body.
  
 -New versions of this package will be available at Joey's ftp server.
--ftp://ftp.infodrom.north.de/pub/people/joey/sysklogd/
+-https://ftp.infodrom.north.de/pub/people/joey/sysklogd/
 +A second mailing list exists as infodrom-sysklogd-cvs@lists.infodrom.org.  Only
 +CVS messages and diffs are distributed there. Whenever new code is added to
 +sysklogd, CVS generates a mail from these changes which will be sent to
 +this list.  Discussions will take place on the first list.
 +
 +The latest version of this software can be found at:
-+http://www.infodrom.org/projects/sysklogd/download.php3
++https://www.infodrom.org/projects/sysklogd/download.php3
  
  Best regards,
  
@@ -431,8 +431,8 @@ diff -ruN sysklogd-1.4.1/sysklogd.8 sysklogd-1.4.1.new/sysklogd.8
  .B MAXFUNIX
  within the syslogd.c source file.  An example for a chroot() daemon is
  described by the people from OpenBSD at
--http://www.psionic.com/papers/dns.html.
-+<http://www.guides.sk/psionic/dns/>.
+-https://www.psionic.com/papers/dns.html.
++<https://www.guides.sk/psionic/dns/>.
  .TP
  .B "\-d"
  Turns on debug mode.  Using this the daemon will not proceed a 

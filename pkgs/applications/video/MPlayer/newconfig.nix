@@ -213,12 +213,12 @@ in args.stdenv.mkDerivation {
   #name = "MPlayer-snapshot";
 
   #src = fetchurl {
-  #  url = http://www7.mplayerhq.hu/MPlayer/releases/mplayer-checkout-snapshot.tar.bz2;
+  #  url = https://www7.mplayerhq.hu/MPlayer/releases/mplayer-checkout-snapshot.tar.bz2;
   #  sha1 = "529682cdea4f412d35f2c456897ab8808810975c";
   #};
 
   src = fetchurl {
-    url = http://www1.mplayerhq.hu/MPlayer/releases/MPlayer-1.0rc1.tar.bz2;
+    url = https://www1.mplayerhq.hu/MPlayer/releases/MPlayer-1.0rc1.tar.bz2;
     sha1 = "a450c0b0749c343a8496ba7810363c9d46dfa73c";
   };
 
@@ -238,7 +238,7 @@ in args.stdenv.mkDerivation {
   patches = [
    # These fix MPlayer's aspect ratio when run in a screen rotated with
    # Xrandr.
-   # See: http://itdp.de/~itdp/html/mplayer-dev-eng/2005-08/msg00427.html
+   # See: https://itdp.de/~itdp/html/mplayer-dev-eng/2005-08/msg00427.html
    ./mplayer-aspect.patch
    ./mplayer-pivot.patch
 
@@ -247,7 +247,7 @@ in args.stdenv.mkDerivation {
   ];
 
   meta = {
-    homepage = http://www.mplayerhq.hu/;
+    homepage = https://www.mplayerhq.hu/;
     description = "A movie player that supports many video formats";
     license = "GPL-2";
   };

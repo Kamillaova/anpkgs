@@ -8,7 +8,7 @@ stdenv.mkDerivation {
   name = "hal-0.5.9";
   
   src = fetchurl {
-    url = http://people.freedesktop.org/~david/dist/hal-0.5.9.tar.gz;
+    url = https://people.freedesktop.org/~david/dist/hal-0.5.9.tar.gz;
     sha256 = "178cm30kshwvs0kf5d3l9cn4hyhfv5h6c6q0qnl0jxhynvpgin35";
   };
   

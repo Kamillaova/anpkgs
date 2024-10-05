@@ -3,7 +3,7 @@ args.stdenv.mkDerivation {
   name = "freemind-0.9.0_Beta_13";
 
   src = args.fetchurl {
-    url = http://downloads.sourceforge.net/freemind/freemind-src-0.9.0_Beta_13_icon_butterfly.tar.gz;
+    url = https://downloads.sourceforge.net/freemind/freemind-src-0.9.0_Beta_13_icon_butterfly.tar.gz;
     sha256 = "00389bhg73qknydrq0f3bskb5lyrdg2p58mnnp19wdvzzmfbic4w";
   };
 
@@ -39,7 +39,7 @@ EOF
 
   meta = {
       description = "mind mapping software";
-      homepage = http://freemind.sourceforge.net/wiki/index.php/Main_Page;
+      homepage = https://freemind.sourceforge.net/wiki/index.php/Main_Page;
       license = "GPL";
   }; 
 }

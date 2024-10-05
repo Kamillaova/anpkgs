@@ -49,7 +49,7 @@ let edf = args.lib.enableDisableFeature; in
     name = "vim_configurable-7.1";
 
   src = args.fetchurl {
-    url = ftp://ftp.nluug.nl/pub/editors/vim/unix/vim-7.1.tar.bz2;
+    url = https://ftp.nluug.nl/pub/editors/vim/unix/vim-7.1.tar.bz2;
     sha256 = "0w6gy49gdbw7hby5rjkjpa7cdvc0z5iajsm4j1h8108rvfam22kz";
   };
 

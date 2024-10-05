@@ -26,7 +26,7 @@ stdenv.mkDerivation {
 
   meta = {
     description = "Official plugins for Nagios";
-    homepage = http://www.nagios.org/;
+    homepage = https://www.nagios.org/;
     license = "GPL";
   };
 }

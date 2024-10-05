@@ -10,7 +10,7 @@ stdenv.mkDerivation {
 
   builder = ./builder.sh;
   src = fetchurl {
-    url = http://ftp.osuosl.org/pub/mythtv/mythtv-0.20.tar.bz2;
+    url = https://ftp.osuosl.org/pub/mythtv/mythtv-0.20.tar.bz2;
     md5 = "52bec1e0fadf7d24d6dcac3f773ddf74";
   };
 

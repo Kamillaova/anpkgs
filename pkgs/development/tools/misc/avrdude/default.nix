@@ -18,7 +18,7 @@ in args.stdenv.mkDerivation {
   inherit (co) /* flags */ buildInputs configureFlags;
 
   src = fetchurl {
-      url = http://mirror.switch.ch/mirror/gentoo/distfiles/avrdude-5.4.tar.gz;
+      url = https://mirror.switch.ch/mirror/gentoo/distfiles/avrdude-5.4.tar.gz;
       sha256 = "bee4148c51ec95999d803cb9f68f12ac2e9128b06f07afe307d38966c0833b30";
     };
 
@@ -27,6 +27,6 @@ in args.stdenv.mkDerivation {
   meta = {
     license = "GPL-2";
     description = "AVR Downloader/UploaDEr";
-    homepage = http://savannah.nongnu.org/projects/avrdude;
+    homepage = https://savannah.nongnu.org/projects/avrdude;
   };
 }

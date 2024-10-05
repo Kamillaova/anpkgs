@@ -4,7 +4,7 @@ stdenv.mkDerivation {
 
   src = fetchurl {
     name = "GateWay6-Client.tar.gz";
-    url = http://www.go6.net/4105/file.asp?file_id=142;
+    url = https://www.go6.net/4105/file.asp?file_id=142;
     sha256 = "1578i6j3kq7g5f55gy1nksl4q0lxssdk39ilrgqjc20gb6k5j7j3";
   };
 

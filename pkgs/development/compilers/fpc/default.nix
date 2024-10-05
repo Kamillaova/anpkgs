@@ -6,7 +6,7 @@ args.stdenv.mkDerivation {
 
   src = args.
 	fetchurl {
-		url = ftp://freepascal.stack.nl/pub/fpc/dist/source-2.2.0/fpcbuild-2.2.0.tar.gz;
+		url = https://freepascal.stack.nl/pub/fpc/dist/source-2.2.0/fpcbuild-2.2.0.tar.gz;
 		sha256 = "0pvsdmimknkgy8jgdz9kd7w5bs9fy5ynrgswpk0ib6x0y26zxijm";
 	};
 

@@ -2,7 +2,7 @@ args : with args;
 	with builderDefs {
 		src = /* put a fetchurl here */
 		fetchurl {
-			url = http://sg.torque.net/sg/p/sdparm-1.02.tgz;
+			url = https://sg.torque.net/sg/p/sdparm-1.02.tgz;
 			sha256 = "13acyg6r65gypdprjhfkmvaykgfcj1riwpnycpvv9znzgq9fxsiv";
 		};
 

@@ -19,7 +19,7 @@ stdenv.mkDerivation rec{
   There is an installation error in jpeg support. You seem to have only one
   of either the headers _or_ the libraries installed. You may need to either
   provide correct --with-extra-... options, or the development package of
-  libjpeg6b. You can get a source package of libjpeg from http://www.ijg.org/
+  libjpeg6b. You can get a source package of libjpeg from https://www.ijg.org/
   Disabling JPEG support.
 
   Warning: you chose to install this package in /nix/store/85a3dz1xxk138yav67yds93pgqrpi21y-superkaramba-0.39,

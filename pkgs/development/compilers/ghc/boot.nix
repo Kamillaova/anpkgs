@@ -6,17 +6,17 @@ stdenv.mkDerivation {
   src =
     if stdenv.system == "i686-linux" then
       fetchurl {
-        url = http://nix.cs.uu.nl/dist/tarballs/ghc-6.4.2-i386-unknown-linux.tar.bz2;
+        url = https://tarballs.nixos.org/ghc-6.4.2-i386-unknown-linux.tar.bz2;
         md5 = "092fe2e25dab22b926babe97cc77db1f";
       }
     else if stdenv.system == "x86_64-linux" then
       fetchurl {
-        url = http://haskell.org/ghc/dist/6.4.2/ghc-6.4.2-x86_64-unknown-linux.tar.bz2;
+        url = https://haskell.org/ghc/dist/6.4.2/ghc-6.4.2-x86_64-unknown-linux.tar.bz2;
         md5 = "8f5fe48798f715cd05214a10987bf6d5";
       }
     else if stdenv.system == "i686-darwin" then
       fetchurl {
-        url = http://www.haskell.org/ghc/dist/6.6.1/ghc-6.6.1-i386-apple-darwin.tar.bz2;
+        url = https://www.haskell.org/ghc/dist/6.6.1/ghc-6.6.1-i386-apple-darwin.tar.bz2;
         sha256 = "1drbsicanr6jlykvs4vs6gbi2q9ac1bcaxz2vzwh3pfv3lfibwia";
       }
     else throw "cannot bootstrap GHC on this platform"; 

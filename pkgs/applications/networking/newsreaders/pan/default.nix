@@ -10,7 +10,7 @@ stdenv.mkDerivation {
   name = "pan-0.132";
 
   src = fetchurl {
-    url = http://pan.rebelbase.com/download/releases/0.132/source/pan-0.132.tar.bz2;
+    url = https://pan.rebelbase.com/download/releases/0.132/source/pan-0.132.tar.bz2;
     sha1 = "dc0bf586145b9d617039f49101874fbc76a9dc18";
   };
 

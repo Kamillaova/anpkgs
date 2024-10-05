@@ -2,7 +2,7 @@ args : with args;
 	with builderDefs {
 		src = /* put a fetchurl here */
 		fetchurl {
-			url = http://fabrice.bellard.free.fr/qemu/qemu-0.9.0.tar.gz;
+			url = https://fabrice.bellard.free.fr/qemu/qemu-0.9.0.tar.gz;
 			sha256 = "1h85njd8xvn472yhcm92rjyzqjr719ab73rxwmz9cm2n6gwsq7s9";
 		};
 

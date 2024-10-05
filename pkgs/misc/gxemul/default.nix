@@ -18,7 +18,7 @@ in args.stdenv.mkDerivation {
   inherit (co) /* flags */ buildInputs configureFlags;
 
   src = fetchurl {
-    url = http://gavare.se/gxemul/src/gxemul-0.4.6.tar.gz;
+    url = https://gavare.se/gxemul/src/gxemul-0.4.6.tar.gz;
     sha256 = "0hf3gi6hfd2qr5090zimfiddcjgank2q6m7dfsr81wwpxfbhb2z3";
   };
 
@@ -29,6 +29,6 @@ in args.stdenv.mkDerivation {
   meta = {
     license = "BSD";
     description = "A Machine Emulator, Mainly emulates MIPS, but supports other CPU type";
-    homepage = http://gavare.se/gxemul/;
+    homepage = https://gavare.se/gxemul/;
   };
 }

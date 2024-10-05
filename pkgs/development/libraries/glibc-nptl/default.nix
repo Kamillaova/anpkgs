@@ -10,7 +10,7 @@ stdenv.mkDerivation {
 
   src = 
 	fetchurl {
-		url = http://ftp.gnu.org/gnu/glibc/glibc-2.6.1.tar.bz2;
+		url = https://ftp.gnu.org/gnu/glibc/glibc-2.6.1.tar.bz2;
 		sha256 = "08pcfsi9zpikjakljklks2ln3hn7544cr9br4kbh5kx27cy3mv9x";
 	};
 

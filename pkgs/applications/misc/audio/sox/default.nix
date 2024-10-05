@@ -47,10 +47,10 @@ args:
 
     meta = {
       description = "Sample Rate Converter for audio";
-      homepage = http://www.mega-nerd.com/SRC/index.html;
+      homepage = https://www.mega-nerd.com/SRC/index.html;
       # you can choose one of the following licenses:
       license = [ "GPL"
-                  { url=http://www.mega-nerd.com/SRC/libsamplerate-cul.pdf;
+                  { url=https://www.mega-nerd.com/SRC/libsamplerate-cul.pdf;
                     name="libsamplerate Commercial Use License";
                   } ];
     };

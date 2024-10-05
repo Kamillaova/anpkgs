@@ -19,12 +19,12 @@ assert pluginSupport -> libstdcpp5 != null;
   src =
     if stdenv.system == "i686-linux" then
       fetchurl {
-        url = http://download.java.net/dlj/binaries/jdk-6u3-dlj-linux-i586.bin;
+        url = https://download.java.net/dlj/binaries/jdk-6u3-dlj-linux-i586.bin;
         sha256 = "5c44208fbd5f90b3e6a0692ed9e1e98f5feb0c88aa0cfae5186dddb1f05f731b";
       }
     else if stdenv.system == "x86_64-linux" then
       fetchurl {
-        url = http://download.java.net/dlj/binaries/jdk-6u3-dlj-linux-amd64.bin;
+        url = https://download.java.net/dlj/binaries/jdk-6u3-dlj-linux-amd64.bin;
         sha256 = "8bc80ea1bf739674c1cacdfba9987a4d15adb54f4b1462a0b48b79815f56b311";
       }
     else

@@ -6,7 +6,7 @@ stdenv.mkDerivation {
   name = "bash-3.2-p17";
 
   src = fetchurl {
-    url = http://losser.st-lab.cs.uu.nl/~eelco/dist/bash-3.2-p17.tar.bz2;
+    url = https://nixos.org/tarballs/bash-3.2-p17.tar.bz2;
     sha256 = "153gg2z2s3ar7vni3345nnmdisha4b8cxzsj79d8ap6m6i4c35f5";
   };
 

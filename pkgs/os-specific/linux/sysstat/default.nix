@@ -4,7 +4,7 @@ stdenv.mkDerivation {
   name = "sysstat-8.0.0";
    
   src = fetchurl {
-    url = http://perso.orange.fr/sebastien.godard/sysstat-8.0.0.tar.bz2;
+    url = https://perso.orange.fr/sebastien.godard/sysstat-8.0.0.tar.bz2;
     md5 = "cb579d5c5d5bc1386cc09193e15765bf";
   };
 

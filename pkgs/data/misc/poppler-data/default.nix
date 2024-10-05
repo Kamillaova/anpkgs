@@ -4,7 +4,7 @@ stdenv.mkDerivation rec {
   name = "poppler-data-0.1.1";
 
   src = fetchurl {
-	url = http://poppler.freedesktop.org/poppler-data-0.1.1.tar.gz;
+	url = https://poppler.freedesktop.org/poppler-data-0.1.1.tar.gz;
     sha256 = "1hnfanqbhkjyjq0j8yfadgbcai9mggz09lzxnia2bbk4lhy9722a";
   };
 

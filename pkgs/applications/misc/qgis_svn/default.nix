@@ -59,7 +59,7 @@ in
 
     meta = { 
       description = "user friendly Open Source Geographic Information System";
-      homepage = http://www.qgis.org;
+      homepage = https://www.qgis.org;
       # you can choose one of the following licenses: 
       license = [ "GPL" ];
     };

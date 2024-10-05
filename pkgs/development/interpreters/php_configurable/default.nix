@@ -452,14 +452,14 @@ args:
     ";
 
     src = args.fetchurl {
-      url = http://de.php.net/get/php-5.2.4.tar.bz2/from/this/mirror;
+      url = https://de.php.net/get/php-5.2.4.tar.bz2/from/this/mirror;
       sha256 = "1h513j7crz08n7rlh8v7cvxfzisj87mvvyfrkiaa76v1wicm4bsh";
       name = "php-5.2.4.tar.bz2";
     };
 
     meta = { 
         description = "The PHP language runtime engine"; # : CLI, CGI and Apache2 SAPIs ? as well TODO 
-        homepage = http://www.php.net/;
+        homepage = https://www.php.net/;
         license = "PHP-3";
       };
 

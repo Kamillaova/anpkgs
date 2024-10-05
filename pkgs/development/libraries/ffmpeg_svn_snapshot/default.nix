@@ -9,7 +9,7 @@ stdenv.mkDerivation {
     sha256 = "c97b0cd791f8408cfc69452ff7afbf00d34b367e493dfbcae830fba99c229189";
   };
   /*fetchurl {
-    url = http://ffmpeg.mplayerhq.hu/ffmpeg-export-snapshot.tar.bz2;
+    url = https://ffmpeg.mplayerhq.hu/ffmpeg-export-snapshot.tar.bz2;
     sha256 = "040a35f0c004323af14329c09ad3cff8d040e2cf9797d97cde3d9d83d02b4d87";
   };*/
   # !!! Hm, what are the legal consequences of --enable-gpl?

@@ -2,7 +2,7 @@ args : with args;
 	with builderDefs {
 		src = /* put a fetchurl here */
 	fetchurl {
-		url = http://releases.compiz-fusion.org/0.6.0/libcompizconfig-0.6.0.tar.bz2;
+		url = https://releases.compiz-fusion.org/0.6.0/libcompizconfig-0.6.0.tar.bz2;
 		sha256 = "1p75p29qg2syk1b4cvkf9ds5qv3h2jnqa6gs38rivbyqqvrcgkij";
 	};
 		buildInputs = (import ../general-dependencies.nix args)++

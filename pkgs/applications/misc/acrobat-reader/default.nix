@@ -10,7 +10,7 @@ stdenv.mkDerivation {
   name = "acrobat-reader-7.0.9";
   builder = ./builder.sh;
   src = fetchurl {
-    url = http://ardownload.adobe.com/pub/adobe/reader/unix/7x/7.0.9/enu/AdobeReader_enu-7.0.9-1.i386.tar.gz;
+    url = https://ardownload.adobe.com/pub/adobe/reader/unix/7x/7.0.9/enu/AdobeReader_enu-7.0.9-1.i386.tar.gz;
     sha256 = "0qs8v57gamkk243f44yqxic93izf0bn2d9l4wwbqqy1jv5s125hy";
   };
   libPath = [

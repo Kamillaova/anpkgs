@@ -17,10 +17,10 @@ args:
 
       src = if (args.use_svn) then
         args.fetchsvn { 
-            url = http://svn.osgeo.org/geos/trunk; 
+            url = https://svn.osgeo.org/geos/trunk; 
             md5 = "b46f5ea517a337064006bab92f3090d4";
         } else args.fetchurl {
-          url = http://geos.refractions.net/geos-3.0.0rc4.tar.bz2;
+          url = https://geos.refractions.net/geos-3.0.0rc4.tar.bz2;
           sha256 = "0pgwwv8q4p234r2jwdkaxcf68z2fwgmkc74c6dnmms2sdwkb5lbw";
         };
 
@@ -35,7 +35,7 @@ args:
           description = "C++ port of the Java Topology Suite (JTS)"
             + "- all the OpenGIS \"Simple Features for SQL\" spatial predicate functions and spatial operators,"
             + " as well as specific JTS topology functions such as IsValid";
-          homepage = http://geos.refractions.net/;
+          homepage = https://geos.refractions.net/;
           license = "GPL";
       };
   };

@@ -13,7 +13,7 @@ stdenv.mkDerivation {
   ";
 
   meta = {
-    homepage = http://p7zip.sourceforge.net/;
+    homepage = https://p7zip.sourceforge.net/;
     description = "A port of the 7-zip archiver";
   };
 }

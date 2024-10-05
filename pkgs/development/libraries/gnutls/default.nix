@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   
   meta = {
     description = "The GNU Transport Layer Security Library";
-    homepage = http://www.gnu.org/software/gnutls/;
+    homepage = https://www.gnu.org/software/gnutls/;
     license = "LGPL";
   };
 }

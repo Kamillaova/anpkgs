@@ -5,7 +5,7 @@ stdenv.mkDerivation {
 
   src = 
 	fetchurl {
-		url = ftp://ftp.mozilla.org/pub/firefox/releases/3.0b2/source/firefox-3.0b2-source.tar.bz2;
+		url = https://ftp.mozilla.org/pub/firefox/releases/3.0b2/source/firefox-3.0b2-source.tar.bz2;
 		sha256 = "0mszad8j35wvzi67dp3j9sznqkgb9b3in22c5790g9b9pv6xk8jp";
 	};
 

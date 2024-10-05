@@ -10,7 +10,7 @@ assert sslSupport -> openssl != null;
   name = "neon-0.26.3";
   
   src = fetchurl {
-    url = http://www.webdav.org/neon/neon-0.26.3.tar.gz;
+    url = https://www.webdav.org/neon/neon-0.26.3.tar.gz;
     sha256 = "0gvv5a5z0fmfhdvz5qb1zb1z30jlml1y03hjzg8dn9246nw7z2dn";
   };
   

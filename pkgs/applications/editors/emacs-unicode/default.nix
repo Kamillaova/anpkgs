@@ -20,7 +20,7 @@ stdenv.mkDerivation {
   builder = ./builder.sh;
   
   src = fetchurl {
-    url = http://debs.peadrop.com/pool/edgy/backports/emacs-snapshot_20070705.orig.tar.gz;
+    url = https://debs.peadrop.com/pool/edgy/backports/emacs-snapshot_20070705.orig.tar.gz;
     sha256 = "1blybacpsxha2v24kj482wl3g1z93rwddfc8rsqsk6dr6f5kdj5q";
   };
 
@@ -44,7 +44,7 @@ stdenv.mkDerivation {
 
   meta = {
     description = "Emacs with Unicode, GTK and Xft support (23.x alpha)";
-    homepage = http://www.emacswiki.org/cgi-bin/wiki/XftGnuEmacs;
+    homepage = https://www.emacswiki.org/cgi-bin/wiki/XftGnuEmacs;
     license = "GPL";
   };
 }

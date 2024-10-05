@@ -20,7 +20,7 @@ rec {
 	trolltech = stdenv.mkDerivation (common // {
 	  name = "qt-4.3.1";
 	  src = fetchurl {
-		url = ftp://ftp.trolltech.com/qt/source/qt-x11-opensource-src-4.3.1.tar.gz;
+		url = https://ftp.trolltech.com/qt/source/qt-x11-opensource-src-4.3.1.tar.gz;
 		sha256 = "0qg6apy2r7jbbfinxh0v1jm08yv890r40hhmy5cysn239v3x0nad";
 	  };
 	  patchPhase = common.patchPhase;

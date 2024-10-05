@@ -14,7 +14,7 @@ stdenv.mkDerivation rec {
 
   meta = {
 	  license = "GPL2";
-	  homepage = http://git.or.cz;
+	  homepage = https://git.or.cz;
 	  description = "A popular version control system designed to handle very
 	  large projects with speed and efficiency";
   };

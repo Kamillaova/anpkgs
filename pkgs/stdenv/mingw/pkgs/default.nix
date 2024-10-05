@@ -130,7 +130,7 @@ rec {
       setupHook = ../../../development/tools/misc/pkgconfig/setup-hook.sh;
       src =
         fetchurl {
-          url = http://www.cs.uu.nl/people/martin/pkg-config-0.20-bin.tar.gz;
+          url = https://www.cs.uu.nl/people/martin/pkg-config-0.20-bin.tar.gz;
           md5 = "71f9595a022619b8e8b0f7853790c4c7";
         };
     };

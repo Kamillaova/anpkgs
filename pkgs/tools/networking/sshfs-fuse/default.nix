@@ -9,7 +9,7 @@ stdenv.mkDerivation {
   buildInputs = [pkgconfig glib fuse];
 
   meta = {
-    homepage = http://fuse.sourceforge.net/sshfs.html;
+    homepage = https://fuse.sourceforge.net/sshfs.html;
     description = "FUSE-based filesystem that allows remote filesystems to be mounted over SSH";
   };
 }

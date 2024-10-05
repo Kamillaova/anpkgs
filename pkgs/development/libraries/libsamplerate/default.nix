@@ -13,7 +13,7 @@ args:
       name = "libsamplerate-0.1.2";
 
       src = args.fetchurl {
-        url = http://www.mega-nerd.com/SRC/libsamplerate-0.1.2.tar.gz;
+        url = https://www.mega-nerd.com/SRC/libsamplerate-0.1.2.tar.gz;
         sha256 = "1m1iwzpcny42kcqv5as2nyb0ggrb56wzckpximqpp2y74dipdf4q";
       };
 
@@ -24,10 +24,10 @@ args:
 
     meta = { 
       description = "Sample Rate Converter for audio";
-      homepage = http://www.mega-nerd.com/SRC/index.html;
+      homepage = https://www.mega-nerd.com/SRC/index.html;
       # you can choose one of the following licenses: 
       license = [ "GPL" 
-                  { url=http://www.mega-nerd.com/SRC/libsamplerate-cul.pdf; 
+                  { url=https://www.mega-nerd.com/SRC/libsamplerate-cul.pdf; 
                     name="libsamplerate Commercial Use License";
                   } ];
     };

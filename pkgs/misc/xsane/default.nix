@@ -4,7 +4,7 @@ stdenv.mkDerivation {
   name = "xsane-0.97";
 
   src = fetchurl {
-    url = ftp://ftp.sane-project.org/pub/sane/xsane/xsane-0.97.tar.gz;
+    url = https://ftp.sane-project.org/pub/sane/xsane/xsane-0.97.tar.gz;
     md5 = "3d1f889d88c3462594febd53be58c561";
   };
 

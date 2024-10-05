@@ -2,7 +2,7 @@ args : with args;
 	with builderDefs {
 		src = /* put a fetchurl here */
 	fetchurl {
-		url = http://releases.compiz-fusion.org/compiz/0.6.2/compiz-0.6.2.tar.bz2;
+		url = https://releases.compiz-fusion.org/compiz/0.6.2/compiz-0.6.2.tar.bz2;
 		sha256 = "0k58bkbyqx94ch7scvn3d26296ai9nddfb6lg8v3bhbi2zj4i2n5";
 	};
 		buildInputs = [

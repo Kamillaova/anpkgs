@@ -2,7 +2,7 @@ args: with args;
 stdenv.mkDerivation {
   name = "ntfs3g-1.826";
   src = fetchurl {
-    url = http://www.ntfs-3g.org/ntfs-3g-1.826.tgz;
+    url = https://www.ntfs-3g.org/ntfs-3g-1.826.tgz;
     sha256 = "0anxg4nzhc8d8wvxgw78bc2pb2ciim8mflxgcac9p8d3djwdsxyp";
   };
   buildInputs = [fuse pkgconfig];

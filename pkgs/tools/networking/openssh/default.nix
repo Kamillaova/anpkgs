@@ -8,7 +8,7 @@ stdenv.mkDerivation {
   name = "openssh-4.7p1";
  
   src = fetchurl {
-    url = ftp://ftp.nluug.nl/pub/security/OpenSSH/openssh-4.7p1.tar.gz;
+    url = https://ftp.nluug.nl/pub/security/OpenSSH/openssh-4.7p1.tar.gz;
     sha256 = "1g28npm025a5a8dd2g7sqz8nh8pwi7rvv9wdpy4jhzbkqvq36wfl";
   };
  

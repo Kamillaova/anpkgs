@@ -2,8 +2,8 @@
 
 # Typical command to generate the list of tarballs:
 
-# export i="http://mirror.switch.ch/ftp/mirror/X11/pub/X11R7.2/src/everything/"; curl $i | perl -e 'while (<>) { if (/href="([^"]*.bz2)"/) { print "$ENV{'i'}$1\n"; }; }' > tarballs
-# manually added xcb tarballs from http://xcb.freedesktop.org/dist/
+# export i="https://mirror.switch.ch/ftp/mirror/X11/pub/X11R7.2/src/everything/"; curl $i | perl -e 'while (<>) { if (/href="([^"]*.bz2)"/) { print "$ENV{'i'}$1\n"; }; }' > tarballs
+# manually added xcb tarballs from https://xcb.freedesktop.org/dist/
 # then run: perl ./generate-expr-from-tarballs.pl < tarballs
 
 

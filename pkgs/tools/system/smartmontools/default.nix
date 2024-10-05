@@ -10,7 +10,7 @@ stdenv.mkDerivation {
 
   meta = {
     description = "Tools for monitoring the health of hard drivers";
-    homepage = http://smartmontools.sourceforge.net/;
+    homepage = https://smartmontools.sourceforge.net/;
     license = "GPL";
   };
 }

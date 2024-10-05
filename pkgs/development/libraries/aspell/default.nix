@@ -4,7 +4,7 @@ stdenv.mkDerivation {
   name = "aspell-0.60.5";
   
   src = fetchurl {
-    url = ftp://ftp.gnu.org/gnu/aspell/aspell-0.60.5.tar.gz;
+    url = https://ftp.gnu.org/gnu/aspell/aspell-0.60.5.tar.gz;
     md5 = "17fd8acac6293336bcef44391b71e337";
   };
   
@@ -19,7 +19,7 @@ stdenv.mkDerivation {
 
   meta = {
     description = "A spell checker for many languages";
-    homepage = http://aspell.net/;
+    homepage = https://aspell.net/;
     license = "LGPL";
   };
 }

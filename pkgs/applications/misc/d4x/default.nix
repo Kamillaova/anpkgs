@@ -5,7 +5,7 @@ args.stdenv.mkDerivation {
   inherit (args) boost;
 
   src = args.fetchurl {
-    url =  http://d4x.krasu.ru/files/d4x-2.5.7.1.tar.bz2;
+    url =  https://d4x.krasu.ru/files/d4x-2.5.7.1.tar.bz2;
     sha256 = "1i1jj02bxynisqapv31481sz9jpfp3f023ky47spz1v1wlwbs13m";
   };
 
@@ -16,7 +16,7 @@ args.stdenv.mkDerivation {
 
   meta = { 
       description = "graphical download manager";
-      homepage = http://www.krasu.ru/soft/chuchelo/;
+      homepage = https://www.krasu.ru/soft/chuchelo/;
       license = "Artistic";
   };
 }

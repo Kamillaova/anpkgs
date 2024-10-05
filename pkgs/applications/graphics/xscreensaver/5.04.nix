@@ -1,7 +1,7 @@
 args : with args; with builderDefs (args // {
 		src = /* put a fetchurl here */
 		fetchurl {
-			url = http://www.jwz.org/xscreensaver/xscreensaver-5.04.tar.gz;
+			url = https://www.jwz.org/xscreensaver/xscreensaver-5.04.tar.gz;
 			sha256 = "1mx6zc6rvb6pr9wb6mv4ljiii9ybw0dshd74aclf7rlmfx4hn86i";
 		};
 		useConfig = true;

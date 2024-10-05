@@ -7,7 +7,7 @@ args.stdenv.mkDerivation {
   name = "openal-soft-testing";
 
   src = args.fetchurl {
-    url = http://kcat.strangesoft.net/OpenAL.tar.bz2?2;
+    url = https://kcat.strangesoft.net/OpenAL.tar.bz2?2;
     sha256 = "7b53c3e6eda1a71010651eb058c71c9b0c86b3c15cae5f0ffeeb7222531aa97d";
   };
 
@@ -18,7 +18,7 @@ args.stdenv.mkDerivation {
   
   meta = {
       description = "openal alternative";
-      homepage = http://kcat.strangesoft.net/openal.html;
+      homepage = https://kcat.strangesoft.net/openal.html;
       license = "GPL2";
   };
 }

@@ -3,7 +3,7 @@ args.stdenv.mkDerivation {
   name = "ctl-1.4.1";
 
   src = args.fetchurl {
-    url = http://surfnet.dl.sourceforge.net/sourceforge/ampasctl/ctl-1.4.1.tar.gz;
+    url = https://surfnet.dl.sourceforge.net/sourceforge/ampasctl/ctl-1.4.1.tar.gz;
     sha256 = "16lzgbpxdyhykdwndj1i9vx3h4bfkxqqcrvasvgg70gb5raxj0mj";
   };
 
@@ -17,7 +17,7 @@ args.stdenv.mkDerivation {
 
   meta = {
       description = "Color Transformation Language";
-      homepage = http://ampasctl.sourceforge.net;
+      homepage = https://ampasctl.sourceforge.net;
       license = "SOME OPEN SOURCE LICENSE"; # TODO which exactly is this?
   };
 }

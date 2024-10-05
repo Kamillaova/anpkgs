@@ -29,7 +29,7 @@ stdenv.mkDerivation {
     ./dns64.patch
 
     # Get lseek64 working on x86_64.  From
-    # http://svn.annvix.org/cgi-bin/viewvc.cgi/packages/releases/2.0-CURRENT/dietlibc/SOURCES
+    # https://svn.annvix.org/cgi-bin/viewvc.cgi/packages/releases/2.0-CURRENT/dietlibc/SOURCES
     ./x86_64-lseek64.patch
     #./x86_64-stat64.patch
 

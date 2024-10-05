@@ -4,7 +4,7 @@ args.stdenv.mkDerivation {
 
   src = args.fetchurl {
     # TODO mirrors 
-    url = http://apache.linux-mirror.org/maven/binaries/apache-maven-2.0.8-bin.tar.bz2;
+    url = https://apache.linux-mirror.org/maven/binaries/apache-maven-2.0.8-bin.tar.bz2;
     sha256 = "1wasvqplw7xk04j38vsq94zbrlpdg2k4348bg8730snr6zgaasai";
   };
 

@@ -12,8 +12,8 @@ args.stdenv.mkDerivation {
   preConfigure="autoreconf";
 
   meta = { 
-      description = "http://sourceforge.net/projects/bridge/";
-      homepage = [ "http://www.linux-foundation.org/en/Net:Bridge/" "http://sourceforge.net/projects/bridge/" ];
+      description = "https://sourceforge.net/projects/bridge/";
+      homepage = [ "https://www.linux-foundation.org/en/Net:Bridge/" "https://sourceforge.net/projects/bridge/" ];
       license = "GPL";
   };
 }

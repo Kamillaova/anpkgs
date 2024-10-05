@@ -2,7 +2,7 @@ args: with args;
 stdenv.mkDerivation {
 	name = "poppler-0.6.1";
 	src = fetchurl {
-		url = http://poppler.freedesktop.org/poppler-0.6.1.tar.gz;
+		url = https://poppler.freedesktop.org/poppler-0.6.1.tar.gz;
 		sha256 = "1wiz7m36wr4l0ihnawl7ww2ai0cx81ly5ych9wmyh348py4jgyyl";
 	};
 

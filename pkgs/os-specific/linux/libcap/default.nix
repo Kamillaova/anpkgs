@@ -15,7 +15,7 @@ stdenv.mkDerivation {
   ";
 
   patches = [
-    # Borrowed from http://sources.gentoo.org/viewcvs.py/gentoo-x86/sys-libs/libcap/files/libcap-1.10-syscall.patch?rev=1.2&view=log.
+    # Borrowed from https://sources.gentoo.org/viewcvs.py/gentoo-x86/sys-libs/libcap/files/libcap-1.10-syscall.patch?rev=1.2&view=log.
     ./syscall.patch
   ];
 }

@@ -7,7 +7,7 @@ stdenv.mkDerivation {
 
   builder = ./builder.sh;
   src = fetchurl {
-    url = http://fpdownload.macromedia.com/get/flashplayer/current/install_flash_player_9_linux.tar.gz;
+    url = https://fpdownload.macromedia.com/get/flashplayer/current/install_flash_player_9_linux.tar.gz;
     sha256 = "0yr2n7barlbvqxxzbvgp0pmbwwf7bvjksravqa47yra689jvynr7";
   };
 
@@ -19,7 +19,7 @@ stdenv.mkDerivation {
 
   meta = {
     description = "Adobe Flash Player browser plugin";
-    homepage = http://www.adobe.com/products/flashplayer/;
+    homepage = https://www.adobe.com/products/flashplayer/;
   };
 
 }

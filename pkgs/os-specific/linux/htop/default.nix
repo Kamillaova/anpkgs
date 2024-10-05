@@ -9,6 +9,6 @@ stdenv.mkDerivation {
 
 	meta = {
 		description = "An interactive process viewer for Linux";
-		homepage = http://htop.sourceforge.net;
+		homepage = https://htop.sourceforge.net;
 	};
 }

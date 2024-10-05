@@ -280,12 +280,7 @@ rec {
     inherit stdenv mercurial nix;
   };
 
-  # Allow the stdenv to determine fetchurl, to cater for strange
-  # requirements.
-  fetchurl = useFromStdenv (stdenv ? fetchurl) stdenv.fetchurl
-    (import ../build-support/fetchurl {
-      inherit stdenv curl;
-    });
+  fetchurl = import <nix/fetchurl.nix>;
 
   makeWrapper = ../build-support/make-wrapper/make-wrapper.sh;
 
@@ -1081,7 +1076,7 @@ rec {
     inherit fetchurl stdenv ghc;
   };
 
-  #TODO add packages http://cvs.haskell.org/Hugs/downloads/2006-09/packages/ and test
+  #TODO add packages https://cvs.haskell.org/Hugs/downloads/2006-09/packages/ and test
   # commented out because it's using the new configuration style proposal which is unstable
   #hugs = import ../development/compilers/hugs {
     #inherit lib fetchurl stdenv;
@@ -1831,7 +1826,7 @@ rec {
   gdal = stdenv.mkDerivation {
     name = "gdal-1.4.2";
     src = fetchurl {
-      url = http://download.osgeo.org/gdal/gdal-1.4.2.tar.gz;
+      url = https://download.osgeo.org/gdal/gdal-1.4.2.tar.gz;
       sha256 = "1vl8ym9y7scm0yd4vghjfqims69b9h1gn9l4zvy2jyglh35p8vpf";
     };
   };
@@ -2604,7 +2599,7 @@ rec {
   perlCGISession = import ../development/perl-modules/generic perl {
     name = "CGI-Session-3.95";
     src = fetchurl {
-      url = http://search.cpan.org/CPAN/authors/id/S/SH/SHERZODR/CGI-Session-3.95.tar.gz;
+      url = https://search.cpan.org/CPAN/authors/id/S/SH/SHERZODR/CGI-Session-3.95.tar.gz;
       md5 = "fe9e46496c7c711c54ca13209ded500b";
     };
   };
@@ -2616,7 +2611,7 @@ rec {
   perlDateManip = import ../development/perl-modules/generic perl {
     name = "DateManip-5.42a";
     src = fetchurl {
-      url = http://nix.cs.uu.nl/dist/tarballs/DateManip-5.42a.tar.gz;
+      url = https://tarballs.nixos.org/DateManip-5.42a.tar.gz;
       md5 = "648386bbf46d021ae283811f75b07bdf";
     };
   };
@@ -2624,7 +2619,7 @@ rec {
   perlDigestSHA1 = import ../development/perl-modules/generic perl {
     name = "Digest-SHA1-2.11";
     src = fetchurl {
-      url = http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/Digest-SHA1-2.11.tar.gz;
+      url = https://search.cpan.org/CPAN/authors/id/G/GA/GAAS/Digest-SHA1-2.11.tar.gz;
       md5 = "2449bfe21d6589c96eebf94dae24df6b";
     };
   };
@@ -2632,7 +2627,7 @@ rec {
   perlEmailAddress = import ../development/perl-modules/generic perl {
     name = "Email-Address-1.888";
     src = fetchurl {
-      url = http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Email-Address-1.888.tar.gz;
+      url = https://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Email-Address-1.888.tar.gz;
       sha256 = "0c6b8djnmiy0niskrvywd6867xd1qmn241ffdwj957dkqdakq9yx";
     };
   };
@@ -2640,7 +2635,7 @@ rec {
   perlEmailSend = import ../development/perl-modules/generic perl {
     name = "Email-Send-2.185";
     src = fetchurl {
-      url = http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Email-Send-2.185.tar.gz;
+      url = https://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Email-Send-2.185.tar.gz;
       sha256 = "0pbgnnbmv6z3zzqaiq1sdcv5d26ijhw4p8k8kp6ac7arvldblamz";
     };
     propagatedBuildInputs = [perlEmailSimple perlEmailAddress perlModulePluggable perlReturnValue];
@@ -2649,7 +2644,7 @@ rec {
   perlEmailSimple = import ../development/perl-modules/generic perl {
     name = "Email-Simple-2.003";
     src = fetchurl {
-      url = http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Email-Simple-2.003.tar.gz;
+      url = https://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Email-Simple-2.003.tar.gz;
       sha256 = "0h8873pidhkqy7415s5sx8z614d0haxiknbjwrn65icrr2m0b8g6";
     };
   };
@@ -2657,7 +2652,7 @@ rec {
   perlHTMLParser = import ../development/perl-modules/generic perl {
     name = "HTML-Parser-3.56";
     src = fetchurl {
-      url = http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/HTML-Parser-3.56.tar.gz;
+      url = https://search.cpan.org/CPAN/authors/id/G/GA/GAAS/HTML-Parser-3.56.tar.gz;
       sha256 = "0x1h42r54aq4yqpwi7mla4jzia9c5ysyqh8ir2nav833f9jm6g2h";
     };
     propagatedBuildInputs = [perlHTMLTagset];
@@ -2666,7 +2661,7 @@ rec {
   perlHTMLTagset = import ../development/perl-modules/generic perl {
     name = "HTML-Tagset-3.10";
     src = fetchurl {
-      url = http://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/HTML-Tagset-3.10.tar.gz;
+      url = https://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/HTML-Tagset-3.10.tar.gz;
       sha256 = "05k292qy7jzjlmmybis8nncpnwwa4jfkm7q3gq6866ydxrzds9xh";
     };
   };
@@ -2674,7 +2669,7 @@ rec {
   perlHTMLTree = import ../development/perl-modules/generic perl {
     name = "HTML-Tree-3.18";
     src = fetchurl {
-      url = http://nix.cs.uu.nl/dist/tarballs/HTML-Tree-3.18.tar.gz;
+      url = https://tarballs.nixos.org/HTML-Tree-3.18.tar.gz;
       md5 = "6a9e4e565648c9772e7d8ec6d4392497";
     };
   };
@@ -2682,7 +2677,7 @@ rec {
   perlLocaleGettext = import ../development/perl-modules/generic perl {
     name = "LocaleGettext-1.04";
     src = fetchurl {
-      url = http://nix.cs.uu.nl/dist/tarballs/gettext-1.04.tar.gz;
+      url = https://tarballs.nixos.org/gettext-1.04.tar.gz;
       md5 = "578dd0c76f8673943be043435b0fbde4";
     };
   };
@@ -2690,7 +2685,7 @@ rec {
   perlLWP = import ../development/perl-modules/generic perl {
     name = "libwww-perl-5.808";
     src = fetchurl {
-      url = http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/libwww-perl-5.808.tar.gz;
+      url = https://search.cpan.org/CPAN/authors/id/G/GA/GAAS/libwww-perl-5.808.tar.gz;
       sha256 = "1r5rslx68yplyd07bvjahjjrrqb56bhgg6gwdr9c16mv2s57gq12";
     };
     propagatedBuildInputs = [perlURI perlHTMLParser perlHTMLTagset];
@@ -2699,7 +2694,7 @@ rec {
   perlModulePluggable = import ../development/perl-modules/generic perl {
     name = "Module-Pluggable-3.5";
     src = fetchurl {
-      url = http://search.cpan.org/CPAN/authors/id/S/SI/SIMONW/Module-Pluggable-3.5.tar.gz;
+      url = https://search.cpan.org/CPAN/authors/id/S/SI/SIMONW/Module-Pluggable-3.5.tar.gz;
       sha256 = "08rywi79pqn2c8zr17fmd18lpj5hm8lxd1j4v2k002ni8vhl43nv";
     };
     patches = [
@@ -2710,7 +2705,7 @@ rec {
   perlReturnValue = import ../development/perl-modules/generic perl {
     name = "Return-Value-1.302";
     src = fetchurl {
-      url = http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Return-Value-1.302.tar.gz;
+      url = https://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Return-Value-1.302.tar.gz;
       sha256 = "0hf5rmfap49jh8dnggdpvapy5r4awgx5hdc3acc9ff0vfqav8azm";
     };
   };
@@ -2718,7 +2713,7 @@ rec {
   perlTermReadKey = import ../development/perl-modules/generic perl {
     name = "TermReadKey-2.30";
     src = fetchurl {
-      url = http://nix.cs.uu.nl/dist/tarballs/TermReadKey-2.30.tar.gz;
+      url = https://tarballs.nixos.org/TermReadKey-2.30.tar.gz;
       md5 = "f0ef2cea8acfbcc58d865c05b0c7e1ff";
     };
   };
@@ -2726,7 +2721,7 @@ rec {
   perlURI = import ../development/perl-modules/generic perl {
     name = "URI-1.35";
     src = fetchurl {
-      url = http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/URI-1.35.tar.gz;
+      url = https://search.cpan.org/CPAN/authors/id/G/GA/GAAS/URI-1.35.tar.gz;
       md5 = "1a933b1114c41a25587ee59ba8376f7c";
     };
   };
@@ -2734,7 +2729,7 @@ rec {
   perlXMLDOM = import ../development/perl-modules/generic perl {
     name = "XML-DOM-1.44";
     src = fetchurl {
-      url = http://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/XML-DOM-1.44.tar.gz;
+      url = https://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/XML-DOM-1.44.tar.gz;
       sha256 = "1r0ampc88ni3sjpzr583k86076qg399arfm9xirv3cw49k3k5bzn";
     };
 #    buildInputs = [libxml2];
@@ -2744,7 +2739,7 @@ rec {
   perlXMLLibXML = import ../development/perl-modules/generic perl {
     name = "XML-LibXML-1.58";
     src = fetchurl {
-      url = http://nix.cs.uu.nl/dist/tarballs/XML-LibXML-1.58.tar.gz;
+      url = https://tarballs.nixos.org/XML-LibXML-1.58.tar.gz;
       md5 = "4691fc436e5c0f22787f5b4a54fc56b0";
     };
     buildInputs = [libxml2];
@@ -2754,7 +2749,7 @@ rec {
   perlXMLLibXMLCommon = import ../development/perl-modules/generic perl {
     name = "XML-LibXML-Common-0.13";
     src = fetchurl {
-      url = http://nix.cs.uu.nl/dist/tarballs/XML-LibXML-Common-0.13.tar.gz;
+      url = https://tarballs.nixos.org/XML-LibXML-Common-0.13.tar.gz;
       md5 = "13b6d93f53375d15fd11922216249659";
     };
     buildInputs = [libxml2];
@@ -2763,7 +2758,7 @@ rec {
   perlXMLNamespaceSupport = import ../development/perl-modules/generic perl {
     name = "XML-NamespaceSupport-1.08";
     src = fetchurl {
-      url = http://nix.cs.uu.nl/dist/tarballs/XML-NamespaceSupport-1.08.tar.gz;
+      url = https://tarballs.nixos.org/XML-NamespaceSupport-1.08.tar.gz;
       md5 = "81bd5ae772906d0579c10061ed735dc8";
     };
     buildInputs = [];
@@ -2776,7 +2771,7 @@ rec {
   perlXMLRegExp = import ../development/perl-modules/generic perl {
     name = "XML-RegExp-0.03";
     src = fetchurl {
-      url = http://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/XML-RegExp-0.03.tar.gz;
+      url = https://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/XML-RegExp-0.03.tar.gz;
       sha256 = "1gkarylvdk3mddmchcwvzq09gpvx5z26nybp38dg7mjixm5bs226";
     };
   };
@@ -2784,7 +2779,7 @@ rec {
   perlXMLSAX = import ../development/perl-modules/generic perl {
     name = "XML-SAX-0.12";
     src = fetchurl {
-      url = http://nix.cs.uu.nl/dist/tarballs/XML-SAX-0.12.tar.gz;
+      url = https://tarballs.nixos.org/XML-SAX-0.12.tar.gz;
       md5 = "bff58bd077a9693fc8cf32e2b95f571f";
     };
     propagatedBuildInputs = [perlXMLNamespaceSupport];
@@ -2793,7 +2788,7 @@ rec {
   perlXMLSimple = import ../development/perl-modules/generic perl {
     name = "XML-Simple-2.14";
     src = fetchurl {
-      url = http://nix.cs.uu.nl/dist/tarballs/XML-Simple-2.14.tar.gz;
+      url = https://tarballs.nixos.org/XML-Simple-2.14.tar.gz;
       md5 = "f321058271815de28d214c8efb9091f9";
     };
     propagatedBuildInputs = [perlXMLParser];
@@ -2802,7 +2797,7 @@ rec {
   perlXMLTwig = import ../development/perl-modules/generic perl {
     name = "XML-Twig-3.15";
     src = fetchurl {
-      url = http://nix.cs.uu.nl/dist/tarballs/XML-Twig-3.15.tar.gz;
+      url = https://tarballs.nixos.org/XML-Twig-3.15.tar.gz;
       md5 = "b26886b8bd19761fff37b23e4964b499";
     };
     propagatedBuildInputs = [perlXMLParser];
@@ -2811,7 +2806,7 @@ rec {
   perlXMLWriter = import ../development/perl-modules/generic perl {
     name = "XML-Writer-0.602";
     src = fetchurl {
-      url = http://search.cpan.org/CPAN/authors/id/J/JO/JOSEPHW/XML-Writer-0.602.tar.gz;
+      url = https://search.cpan.org/CPAN/authors/id/J/JO/JOSEPHW/XML-Writer-0.602.tar.gz;
       sha256 = "0kdi022jcn9mwqsxy2fiwl2cjlid4x13r038jvi426fhjknl11nl";
     };
   };
@@ -3133,7 +3128,7 @@ rec {
       }
       { name = "skas-2.6.20-v9-pre9";
         patch = fetchurl {
-          url = http://www.user-mode-linux.org/~blaisorblade/patches/skas3-2.6/skas-2.6.20-v9-pre9/skas-2.6.20-v9-pre9.patch.bz2;
+          url = https://www.user-mode-linux.org/~blaisorblade/patches/skas3-2.6/skas-2.6.20-v9-pre9/skas-2.6.20-v9-pre9.patch.bz2;
           md5 = "02e619e5b3aaf0f9768f03ac42753e74";
         };
         extraConfig =
@@ -3142,7 +3137,7 @@ rec {
       }
       { name = "fbsplash-0.9.2-r5-2.6.20-rc6";
         patch = fetchurl {
-          url = http://dev.gentoo.org/~spock/projects/gensplash/archive/fbsplash-0.9.2-r5-2.6.20-rc6.patch;
+          url = https://dev.gentoo.org/~spock/projects/gensplash/archive/fbsplash-0.9.2-r5-2.6.20-rc6.patch;
           sha256 = "11v4f85f4jnh9sbhqcyn47krb7l1czgzjw3w8wgbq14jm0sp9294";
         };
         extraConfig = "CONFIG_FB_SPLASH=y";
@@ -3174,7 +3169,7 @@ rec {
       }
       { name = "skas-2.6.20-v9-pre9";
         patch = fetchurl {
-          url = http://www.user-mode-linux.org/~blaisorblade/patches/skas3-2.6/skas-2.6.20-v9-pre9/skas-2.6.20-v9-pre9.patch.bz2;
+          url = https://www.user-mode-linux.org/~blaisorblade/patches/skas3-2.6/skas-2.6.20-v9-pre9/skas-2.6.20-v9-pre9.patch.bz2;
           md5 = "02e619e5b3aaf0f9768f03ac42753e74";
         };
         extraConfig =
@@ -3183,7 +3178,7 @@ rec {
       }
       { name = "fbsplash-0.9.2-r5-2.6.21";
         patch = fetchurl {
-          url = http://dev.gentoo.org/~dsd/genpatches/trunk/2.6.21/4200_fbsplash-0.9.2-r5.patch;
+          url = https://dev.gentoo.org/~dsd/genpatches/trunk/2.6.21/4200_fbsplash-0.9.2-r5.patch;
           sha256 = "00s8074fzsly2zpir885zqkvq267qyzg6vhsn7n1z2v1z78avxd8";
         };
         extraConfig = "CONFIG_FB_SPLASH=y";
@@ -3210,7 +3205,7 @@ rec {
       /*
       { name = "skas-2.6.20-v9-pre9";
         patch = fetchurl {
-          url = http://www.user-mode-linux.org/~blaisorblade/patches/skas3-2.6/skas-2.6.20-v9-pre9/skas-2.6.20-v9-pre9.patch.bz2;
+          url = https://www.user-mode-linux.org/~blaisorblade/patches/skas3-2.6/skas-2.6.20-v9-pre9/skas-2.6.20-v9-pre9.patch.bz2;
           md5 = "02e619e5b3aaf0f9768f03ac42753e74";
         };
         extraConfig =
@@ -3220,7 +3215,7 @@ rec {
       */
       { name = "fbsplash-0.9.2-r5-2.6.21";
         patch = fetchurl {
-          url = http://dev.gentoo.org/~dsd/genpatches/trunk/2.6.22/4200_fbsplash-0.9.2-r5.patch;
+          url = https://dev.gentoo.org/~dsd/genpatches/trunk/2.6.22/4200_fbsplash-0.9.2-r5.patch;
           sha256 = "0822wwlf2dqsap5qslnnp0yl1nbvvvb76l73w2dd8zsyn0bqg3px";
         };
         extraConfig = "CONFIG_FB_SPLASH=y";
@@ -3253,7 +3248,7 @@ rec {
       }
       { name = "skas-2.6.20-v9-pre9";
         patch = fetchurl {
-          url = http://www.user-mode-linux.org/~blaisorblade/patches/skas3-2.6/skas-2.6.20-v9-pre9/skas-2.6.20-v9-pre9.patch.bz2;
+          url = https://www.user-mode-linux.org/~blaisorblade/patches/skas3-2.6/skas-2.6.20-v9-pre9/skas-2.6.20-v9-pre9.patch.bz2;
           md5 = "02e619e5b3aaf0f9768f03ac42753e74";
         };
         extraConfig =
@@ -3262,7 +3257,7 @@ rec {
       }
       { name = "fbsplash-0.9.2-r5-2.6.21";
         patch = fetchurl {
-          url = http://dev.gentoo.org/~dsd/genpatches/trunk/2.6.21/4200_fbsplash-0.9.2-r5.patch;
+          url = https://dev.gentoo.org/~dsd/genpatches/trunk/2.6.21/4200_fbsplash-0.9.2-r5.patch;
           sha256 = "00s8074fzsly2zpir885zqkvq267qyzg6vhsn7n1z2v1z78avxd8";
         };
         extraConfig = "CONFIG_FB_SPLASH=y";
@@ -3279,7 +3274,7 @@ rec {
       { # resume with resume=swap:/dev/xx
         name = "tux on ice"; # (swsusp2)
         patch = fetchurl {
-          url = "http://www.tuxonice.net/downloads/all/tuxonice-3.0-rc2-for-2.6.23.1.patch.bz2";
+          url = "https://www.tuxonice.net/downloads/all/tuxonice-3.0-rc2-for-2.6.23.1.patch.bz2";
           sha256 = "ef86267b6f3d7e309221f5173a881afae1dfa57418be5b3963f2380b0633ca1a";
         };
         extraConfig = "
@@ -3291,7 +3286,7 @@ rec {
       }
       { name = "fbsplash-0.9.2-r5-2.6.21";
         patch = fetchurl {
-          url = http://dev.gentoo.org/~dsd/genpatches/trunk/2.6.22/4200_fbsplash-0.9.2-r5.patch;
+          url = https://dev.gentoo.org/~dsd/genpatches/trunk/2.6.22/4200_fbsplash-0.9.2-r5.patch;
           sha256 = "0822wwlf2dqsap5qslnnp0yl1nbvvvb76l73w2dd8zsyn0bqg3px";
         };
         extraConfig = "CONFIG_FB_SPLASH=y";
@@ -5025,5 +5020,8 @@ rec {
     inherit (xlibs) libX11;
   };
 
-
+  # NEW PACKAGES
+  rvvm = import ../applications/virtualization/rvvm/default.nix {
+    inherit fetchurl stdenv;
+  };
 }

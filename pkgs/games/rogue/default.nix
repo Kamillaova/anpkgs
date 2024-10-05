@@ -3,7 +3,7 @@
 stdenv.mkDerivation {
   name = "rogue-5.4.2";
   src = fetchurl {
-    url = http://rogue.rogueforge.net/files/rogue5.4/rogue5.4.2-src.tar.gz;
+    url = https://rogue.rogueforge.net/files/rogue5.4/rogue5.4.2-src.tar.gz;
     md5 = "bd656cb017a579eba835a0ee445a0a32";
   };
   setSourceRoot = "sourceRoot=.";

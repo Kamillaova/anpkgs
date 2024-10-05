@@ -10,7 +10,7 @@ stdenv.mkDerivation {
 	buildInputs = [djvulibre qt4];
 
 	meta = {
-		homepage = http://djvu.sourceforge.net/djview4.html;
+		homepage = https://djvu.sourceforge.net/djview4.html;
 		description = "A new portable DjVu viewer and browser plugin";
 		license = "GPL2";
 	};

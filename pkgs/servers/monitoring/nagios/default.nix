@@ -17,7 +17,7 @@ stdenv.mkDerivation {
 
   meta = {
     description = "A host, service and network monitoring program";
-    homepage = http://www.nagios.org/;
+    homepage = https://www.nagios.org/;
     license = "GPL";
   };
 }

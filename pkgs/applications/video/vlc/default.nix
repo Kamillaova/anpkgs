@@ -11,7 +11,7 @@ stdenv.mkDerivation {
   name = "vlc-0.8.6d";
 
   src = fetchurl {
-    url = http://download.videolan.org/pub/videolan/vlc/0.8.6d/vlc-0.8.6d.tar.bz2;
+    url = https://download.videolan.org/pub/videolan/vlc/0.8.6d/vlc-0.8.6d.tar.bz2;
     sha256 = "019jw9cp7fbmhbmlbwvjgpamxwx0rdajyxab2sbmh4n6v04fl266";
   };
 
@@ -30,6 +30,6 @@ stdenv.mkDerivation {
 
   meta = {
     description = "Cross-platform media player and streaming server";
-    homepage = http://www.videolan.org/vlc/;
+    homepage = https://www.videolan.org/vlc/;
   };
 }

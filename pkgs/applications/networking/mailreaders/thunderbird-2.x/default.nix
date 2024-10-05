@@ -5,7 +5,7 @@
   # instead of "Mail", enable this option.  However, those
   # binaries may not be distributed without permission from the
   # Mozilla Foundation, see
-  # http://www.mozilla.org/foundation/trademarks/.
+  # https://www.mozilla.org/foundation/trademarks/.
   enableOfficialBranding ? false
     
 }:
@@ -15,7 +15,7 @@ stdenv.mkDerivation {
 
   builder = ./builder.sh;
   src = fetchurl {
-    url = http://releases.mozilla.org/pub/mozilla.org/thunderbird/releases/2.0.0.9/source/thunderbird-2.0.0.9-source.tar.bz2;
+    url = https://releases.mozilla.org/pub/mozilla.org/thunderbird/releases/2.0.0.9/source/thunderbird-2.0.0.9-source.tar.bz2;
     sha1 = "fede9db98f25adb978b84129a6d15a4dbe6bbb3e";
   };
 
@@ -26,7 +26,7 @@ stdenv.mkDerivation {
   patches = [
     # Ugh, inexplicable problem since GTK+ 2.10.  Probably a Firefox
     # bug, but I don't know.  See
-    # http://lists.gobolinux.org/pipermail/gobolinux-users/2007-January/004344.html
+    # https://lists.gobolinux.org/pipermail/gobolinux-users/2007-January/004344.html
     ./xlibs.patch
   ];
 

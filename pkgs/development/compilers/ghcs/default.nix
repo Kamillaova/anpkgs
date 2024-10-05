@@ -140,16 +140,16 @@
   ghc68 = ghcAndLibraries {
     version = "6.8.0.20071004";
     src = fetchurl {
-      url = http://www.haskell.org/ghc/dist/stable/dist/ghc-6.8.0.20071004-src.tar.bz2;
+      url = https://www.haskell.org/ghc/dist/stable/dist/ghc-6.8.0.20071004-src.tar.bz2;
       sha256 = "1yyl7sxykmvkiwfxkfzpqa6cmgw19phkyjcdv99ml22j16wli63l";
-      #url = http://www.haskell.org/ghc/dist/stable/dist/ghc-6.8.20070912-src.tar.bz2;
+      #url = https://www.haskell.org/ghc/dist/stable/dist/ghc-6.8.20070912-src.tar.bz2;
       #sha256 = "1b1gvi7hc7sc0fkh29qvzzd5lgnlvdv3ayiak4mkfnzkahvmq85s";
     };
 
     extra_src = fetchurl {
-      url = http://www.haskell.org/ghc/dist/stable/dist/ghc-6.8.0.20071004-src-extralibs.tar.bz2;
+      url = https://www.haskell.org/ghc/dist/stable/dist/ghc-6.8.0.20071004-src-extralibs.tar.bz2;
       sha256 = "0vjx4vb2xhv5v2wj74ii3gpjim7x9wj0m87zglqlhc8xn31pmrd2";
-      #url = http://www.haskell.org/ghc/dist/stable/dist/ghc-6.8.20070912-src-extralibs.tar.bz2;
+      #url = https://www.haskell.org/ghc/dist/stable/dist/ghc-6.8.20070912-src-extralibs.tar.bz2;
       #sha256 = "0py7d9nh3lkhjxr3yb3n9345d0hmzq79bi40al5rcr3sb84rnp9r";
     };
 

@@ -4,7 +4,7 @@ stdenv.mkDerivation {
   name = "cvs2svn-1.5.1";
 
   src = fetchurl {
-    url = http://cvs2svn.tigris.org/files/documents/1462/36129/cvs2svn-1.5.1.tar.gz;
+    url = https://cvs2svn.tigris.org/files/documents/1462/36129/cvs2svn-1.5.1.tar.gz;
     md5 = "d1e42ea51b373be0023f2b3f6b80ec01";
   };
 

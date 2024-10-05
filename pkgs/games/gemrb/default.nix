@@ -15,6 +15,6 @@ stdenv.mkDerivation {
   meta = {
     description = "A reimplementation of the Infinity Engine "
       + " (used by Baldur's Gate, Icewind Dale, Planescape: Torment, etc.)";
-    homepage = http://gemrb.sourceforge.net/;
+    homepage = https://gemrb.sourceforge.net/;
   };
 }

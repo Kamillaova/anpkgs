@@ -3,7 +3,7 @@ args.stdenv.mkDerivation {
   name = "blender-2.45";
 
   src = args.fetchurl {
-    url = http://download.blender.org/source/blender-2.45.tar.gz;
+    url = https://download.blender.org/source/blender-2.45.tar.gz;
     sha256 = "1bi7j1fcvrpb96sjpcbm4sldf359sgskfhv7a8pgcxj0bnhp47wj";
   };
 
@@ -35,7 +35,7 @@ args.stdenv.mkDerivation {
 
   meta = { 
       description = "3D Creation/Animation/Publishing System";
-      homepage = http://www.blender.org;
+      homepage = https://www.blender.org;
       license = "GPL-2 BL";
     };
 }

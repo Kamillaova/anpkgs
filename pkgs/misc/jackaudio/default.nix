@@ -1,4 +1,4 @@
-# Perhaps we can get some ideas from here ? http://gentoo-wiki.com/HOWTO_Jack 
+# Perhaps we can get some ideas from here ? https://gentoo-wiki.com/HOWTO_Jack 
 # still much to test but it compiles now
 args:
 args.mkDerivationByConfiguration {
@@ -41,13 +41,13 @@ args.mkDerivationByConfiguration {
       name = "jack-0.103.0";
 
       src = args.fetchurl {
-        url = "http://prdownloads.sourceforge.net/jackit/jack-audio-connection-kit-0.103.0.tar.gz";
+        url = "https://prdownloads.sourceforge.net/jackit/jack-audio-connection-kit-0.103.0.tar.gz";
         sha256 = "0pr3vxsfignvc9kls52zvyxhl7mwan0nhnlvcz3s3r3ydmlzvnd5";
       };
 
       meta = { 
         description = "jack audio connection kit";
-        homepage = "http://jackaudio.org";
+        homepage = "https://jackaudio.org";
         license = "GPL";
       };
     };

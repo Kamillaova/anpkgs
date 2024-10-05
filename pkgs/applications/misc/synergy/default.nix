@@ -13,7 +13,7 @@ args.stdenv.mkDerivation {
 
   meta= { 
       description = "share mouse keyboard and clipboard between computers";
-      homepage = http://synergy2;
+      homepage = https://synergy2;
       license = "GPL";
   };
 }

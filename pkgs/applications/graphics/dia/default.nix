@@ -3,7 +3,7 @@ stdenv.mkDerivation {
   name = "dia-0.96";
 
   src = fetchurl {
-    url = http://ftp.gnome.org.nyud.net:8080/pub/gnome/sources/dia/0.96/dia-0.96.1.tar.bz2;
+    url = https://ftp.gnome.org.nyud.net:8080/pub/gnome/sources/dia/0.96/dia-0.96.1.tar.bz2;
     md5 = "7b81b22baa2df55efe4845865dddc7b6";
   };
 

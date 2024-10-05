@@ -12,7 +12,7 @@ args.stdenv.mkDerivation {
 
   # should we use unstable? 
   src = args.fetchurl {
-    url = http://kent.dl.sourceforge.net/sourceforge/ndiswrapper/ndiswrapper-1.49.tar.gz;
+    url = https://kent.dl.sourceforge.net/sourceforge/ndiswrapper/ndiswrapper-1.49.tar.gz;
     sha256 = "1b9nqkk7gv6gffzj9b8mjy5myxf2afwpyr2n5wbfsylf15dvvvjr";
   };
 
@@ -20,7 +20,7 @@ args.stdenv.mkDerivation {
 
   meta = { 
       description = "Ndis driver wrapper for the Linux kernel";
-      homepage = http://sourceforge.net/projects/ndiswrapper;
+      homepage = https://sourceforge.net/projects/ndiswrapper;
       license = "GPL";
   };
 }

@@ -3,7 +3,7 @@
 stdenv.mkDerivation {
   name = "postfix-2.2.11";
   src = fetchurl {
-    url = ftp://ftp.cs.uu.nl/mirror/postfix/postfix-release/official/postfix-2.2.11.tar.gz;
+    url = https://ftp.cs.uu.nl/mirror/postfix/postfix-release/official/postfix-2.2.11.tar.gz;
     sha256 = "04hxpyd3h1f48fnppjwqqxbil13bcwidzpfkra2pgm7h42d9blq7";
   };
 

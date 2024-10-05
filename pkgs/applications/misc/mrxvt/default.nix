@@ -23,7 +23,7 @@ in args.stdenv.mkDerivation {
 
   meta = { 
     description = "multitabbed lightweight terminal emulator basd on rxvt supporting transparency, backgroundimages, freetype fonts,..";
-    homepage = http://sourceforge.net/projects/materm;
+    homepage = https://sourceforge.net/projects/materm;
     license = "GPL";
   };
 }

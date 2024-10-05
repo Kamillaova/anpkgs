@@ -39,7 +39,7 @@ stdenv.mkDerivation {
 
   meta = {
     description = "The Nix Deployment System";
-    homepage = http://nix.cs.uu.nl/;
+    homepage = https://tarballs.nixos.org/;
     license = "LGPL";
   };
 }

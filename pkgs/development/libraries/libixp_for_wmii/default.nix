@@ -12,7 +12,7 @@ stdenv.mkDerivation {
      make install
   ";
   src = fetchurl {
-    url = http://www.suckless.org/snaps/libixp-20070220.tar.gz;
+    url = https://www.suckless.org/snaps/libixp-20070220.tar.gz;
     sha256 = "0bhqgrxp0lnwyf3c9165nldyw300mifyh0mlyfg1i5qr54rk7p79";
   };
 }

@@ -3,7 +3,7 @@ args.stdenv.mkDerivation {
   name = "pygame-1.7";
 
   src = args.fetchurl {
-    url = http://www.pygame.org/ftp/pygame-1.7.1release.tar.gz ;
+    url = https://www.pygame.org/ftp/pygame-1.7.1release.tar.gz ;
     sha256 = "0hl0rmgjcqj217fibwyilz7w9jpg0kh7hsa7vyzd4cgqyliskpqi";
   };
 

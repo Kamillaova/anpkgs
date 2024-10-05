@@ -3,7 +3,7 @@
 stdenv.mkDerivation {
   name = "unison-2.13.16";
   src = fetchurl {
-    url = http://www.seas.upenn.edu/~bcpierce/unison//download/releases/stable/unison-2.13.16.tar.gz;
+    url = https://www.seas.upenn.edu/~bcpierce/unison//download/releases/stable/unison-2.13.16.tar.gz;
     sha256 = "808400a933aeb67654edc770822cd186d1b2adc92e7cb5836996c71c69ffe656";
   };
 
